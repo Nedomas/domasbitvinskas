@@ -9,6 +9,7 @@ import {
 import _ from 'lodash'
 import windowSize from 'react-window-size'
 import { Helmet } from 'react-helmet'
+import fluid from '@candour/fluid'
 
 import ogUrl from '../helpers/ogUrl'
 import Column from './Column'
@@ -259,7 +260,7 @@ class App extends Component {
             </Container>
 
             <Container flex padTop={2} alignItemsCenter wrap>
-              <Button disabled marginRight level={2} component='a' bold style={styles.cv}>
+              <Button disabled marginRight level={2} component='a' bold style={styles.button}>
                 My CV (Soon)
               </Button>
               <Text padTop padBottom narrow>
@@ -305,13 +306,8 @@ const styles = {
     zIndex: -1,
   },
   button: {
-    width: '100%',
-    minWidth: '250px',
-    maxWidth: '250px',
-  },
-  cv: {
-    // width: '100%',
-    minWidth: '250px',
-    maxWidth: '250px',
+    fontSize: fluid(14, 18),
+    minWidth: fluid(150, 250),
+    maxWidth: fluid(150, 250),
   },
 }
