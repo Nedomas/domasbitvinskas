@@ -58,17 +58,17 @@ export default class Column extends Component {
         <Container>
           {_.map(this.items(), ({ name, period, description, url }, n) => (
             <Container key={name} padBottom>
-              <Container flex baseline>
+              <Container>
                 {url && <a href={url} target='_blank' style={styles.url}>
-                  <Headline level={3}>
+                  <Headline inline level={3}>
                     {name}
                   </Headline>
                 </a>}
-                {!url && <Headline level={3}>
+                {!url && <Headline inline level={3}>
                   {name}
                 </Headline>}
 
-                <Text padLeft={0.3}>{period}</Text>
+                <Text inline padLeft={0.3}>{period}</Text>
               </Container>
               <Text level={3}>
                 {description}

@@ -150,6 +150,29 @@ const startups = [
   },
 ]
 
+const technologies = [
+  {
+    name: 'React.js',
+    experience: '4 years experience',
+    description: 'No-brainer for 2018/2019. Vibrant community that has been setting the trends in Javascript world for the last 5 years.',
+  },
+  {
+    name: 'GraphQL + Apollo',
+    experience: '2 years experience',
+    description: `Using consistent, pragmatic & well thought-out API's of GraphQL reveals how messy REST was.`,
+  },
+  {
+    name: 'Prisma',
+    experience: '1 year experience (including Graphcool)',
+    description: 'Answer to the problems everybody had when working with GraphQL for the last few years. I believe Prisma will be our best friend over the next year.',
+  },
+  {
+    name: 'Tensorflow.js',
+    experience: 'Just a few months',
+    description: 'Powerful machine learning just came to the browser with Tensorflow.js and will enable more developers to collaborate and build more complex models.',
+  },
+]
+
 class App extends Component {
   componentDidMount() {
     this.update()
@@ -217,45 +240,22 @@ class App extends Component {
             </Headline>
             <Text level={3} limited padBottom>
               10+ years developing websites and apps with the most promising tech.
-              Here are my <Text level={3} bold inline>4 bets</Text> for the future and technologies that I will continue
-              to work with.
+              Here are my <Text level={3} bold inline>4 bets</Text> on
+              technologies that I will continue to work with in the future.
             </Text>
-            <Container>
-              <Headline level={3}>
-                React.js <Text inline>4 years experience</Text>
-              </Headline>
-              <Text level={2}>
-                No-brainer for 2018/2019. Vibrant community that has been setting the
-                trends in Javascript world for the last 5 years.
-              </Text>
-            </Container>
+
             <Container padTop>
-              <Headline level={3}>
-                GraphQL + Apollo <Text inline>2 years experience</Text>
-              </Headline>
-              <Text level={2}>
-                Using consistent, pragmatic & well thought-out API's of GraphQL reveals how messy
-                REST was.
-              </Text>
-            </Container>
-            <Container padTop>
-              <Headline level={3}>
-                Prisma <Text inline>1 year experience (including Graphcool)</Text>
-              </Headline>
-              <Text level={2}>
-                Answer to the problems everybody had when working with GraphQL for
-                the last few years. I believe Prisma will be our best friend
-                over the next year.
-              </Text>
-            </Container>
-            <Container padTop>
-              <Headline level={3}>
-                Tensorflow.js <Text inline>Just a few months</Text>
-              </Headline>
-              <Text level={2}>
-                Powerful machine learning just came to the browser with Tensorflow.js and
-                will enable more developers to collaborate and build more complex models.
-              </Text>
+              {_.map(technologies, ({ name, experience, description }) => (
+                <Container padBottom key={name}>
+                  <Headline level={3} inline>
+                    {name}
+                  </Headline>
+                  <Text inline padLeft={0.3}>{experience}</Text>
+                  <Text level={2}>
+                    {description}
+                  </Text>
+                </Container>
+              ))}
             </Container>
 
             <Container flex padTop={2} alignItemsCenter wrap>
