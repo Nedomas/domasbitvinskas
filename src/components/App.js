@@ -146,18 +146,31 @@ const startups = [
 ]
 
 class App extends Component {
+  componentDidMount() {
+    this.update()
+  }
+
+  componentDidUpdate() {
+    this.update()
+  }
+
+  update() {
+    this.refs.video.setAttribute('muted', '1');
+    this.refs.video.setAttribute('playsinline', '1');
+    this.refs.video.setAttribute('autoplay', '1');
+  }
+
   render() {
     return (
       <Container style={styles.containter}>
-        <div dangerouslySetInnerHTML={{ __html: `
-          <video
-            style="${videoStyle}"
-            src='/hn.mp4'
-            muted
-            autoplay
-            loop
-          />
-        ` }} />
+        <video
+          style={styles.video}
+          src='/hn.mp4'
+          muted
+          autoPlay
+          loop
+          ref='video'
+        />
         <Container pad={isSmall(this) ? 2 : 4} padTop={2}>
           <Headline level={4} uppercase bold>
             Domas Bitvinskas
@@ -267,7 +280,7 @@ const styles = {
     top: 0,
     padding: '20px 0 0 0',
     position: 'absolute',
-    'z-index': -1,
+    zIndex: -1,
   },
   button: {
     width: '100%',
@@ -280,7 +293,3 @@ const styles = {
     maxWidth: '250px',
   },
 }
-
-const videoStyle = _.reduce(styles.video, (memo, val, key) => (
-  memo += `${key}: ${val}; `
-), '')
