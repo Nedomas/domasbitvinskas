@@ -7,10 +7,6 @@ import {
   Text,
 } from 'candour'
 
-const colors = {
-  white: '#fff',
-}
-
 const closedItemsCount = 4
 
 export default class Column extends Component {

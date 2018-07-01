@@ -11,13 +11,6 @@ import windowSize from 'react-window-size'
 
 import Column from './Column'
 
-const colors = {
-  white: '#fff',
-  black: '#000',
-  blueish: '#709cde',
-  violet: '#626BF6',
-}
-
 const startups = [
   {
     name: 'Abstract',
@@ -156,13 +149,15 @@ class App extends Component {
   render() {
     return (
       <Container style={styles.containter}>
-        <video
-          style={styles.video}
-          src='/hn.mp4'
-          autoPlay
-          loop
-          muted
-        />
+        <div dangerouslySetInnerHTML={{ __html: `
+          <video
+            style="${videoStyle}"
+            src='/hn.mp4'
+            muted
+            autoplay
+            loop
+          />
+        ` }} />
         <Container pad={isSmall(this) ? 2 : 4} padTop={2}>
           <Headline level={4} uppercase bold>
             Domas Bitvinskas
@@ -272,7 +267,7 @@ const styles = {
     top: 0,
     padding: '20px 0 0 0',
     position: 'absolute',
-    zIndex: -1,
+    'z-index': -1,
   },
   button: {
     width: '100%',
@@ -285,3 +280,7 @@ const styles = {
     maxWidth: '250px',
   },
 }
+
+const videoStyle = _.reduce(styles.video, (memo, val, key) => (
+  memo += `${key}: ${val}; `
+), '')
