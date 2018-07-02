@@ -1,5 +1,4 @@
 import React from 'react'
-import _ from 'lodash'
 import {
   Headline,
   Container,
@@ -23,8 +22,8 @@ export default () => (
     <TechnologiesList />
 
     <Container flex padTop={2} alignItemsCenter wrap>
-      <Button disabled marginRight level={2} component='a' bold>
-        My CV (Soon)
+      <Button marginRight level={2} component='a' href='/domasbitvinskas.pdf' target='_blank' bold>
+        Professional CV
       </Button>
       <Text padTop padBottom narrow>
         If you'd like to have me in your team as a <Text bold inline>CTO</Text> or <Text bold inline>VP of Engineering</Text>

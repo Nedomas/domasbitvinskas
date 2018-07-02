@@ -33,8 +33,8 @@ const projects = [
   },
   {
     name: 'Blond',
-    period: '2017 Jan - 2018 Feb',
-    description: 'Machine learning based developer sourcing',
+    period: '2017 Sep - 2018 Feb',
+    description: 'ML-based developer sourcing and BI consultancy',
     category: 'Past',
     url: 'http://www.joinblond.com',
   },
@@ -119,7 +119,7 @@ const projects = [
   },
   {
     name: 'Zapata',
-    period: '2014 Jul - 2017 Dec',
+    period: '2014 Jul - 2016 May',
     description: 'An Automatic Automated Test Writer',
     category: 'Open Source',
     url: 'https://github.com/Nedomas/zapata',
