@@ -22,7 +22,7 @@ export default () => (
     <TechnologiesList />
 
     <Container flex padTop={2} alignItemsCenter wrap>
-      <Button marginRight level={2} component='a' href='/domasbitvinskas.pdf' target='_blank' bold>
+      <Button marginRight level={2} component='a' href='https://media.graphcms.com/ZOAXCxzMSEiKzCudF4Wk' target='_blank' bold>
         Professional CV
       </Button>
       <Text padTop padBottom narrow>
