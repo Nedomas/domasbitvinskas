@@ -7,6 +7,8 @@ import {
   Text,
 } from 'candour'
 
+import Item from './Item'
+
 const closedItemsCount = 4
 
 export default class Column extends Component {
@@ -26,11 +28,11 @@ export default class Column extends Component {
 
   all() {
     const {
-      type,
-      startups,
+      category,
+      projects,
     } = this.props
 
-    return _.filter(startups, { type })
+    return _.filter(projects, { category })
   }
 
   items() {
@@ -41,41 +43,29 @@ export default class Column extends Component {
 
   render() {
     const {
-      type,
-      startups,
+      category,
+      projects,
     } = this.props
 
     return (
       <Container style={styles.container} padBottom={2}>
-        <Container flex baseline>
-          <Headline level={2} padBottom={0.5} bold>
-            {type}
+        <Container>
+          <Headline level={2} padBottom={0.5} bold inline>
+            {category}
           </Headline>
-          <Text padLeft={0.2}>
-            {_.filter(startups, { type }).length}
-          </Text>
+          <Text inline padLeft={0.3}>{_.filter(projects, { category }).length}</Text>
         </Container>
         <Container>
           {_.map(this.items(), ({ name, period, description, url }, n) => (
-            <Container key={name} padBottom>
-              <Container>
-                {url && <a href={url} target='_blank' style={styles.url}>
-                  <Headline inline level={3}>
-                    {name}
-                  </Headline>
-                </a>}
-                {!url && <Headline inline level={3}>
-                  {name}
-                </Headline>}
-
-                <Text inline padLeft={0.3}>{period}</Text>
-              </Container>
-              <Text level={3}>
-                {description}
-              </Text>
-            </Container>
+            <Item
+              key={name}
+              headline={name}
+              subheadline={period}
+              description={description}
+              url={url}
+            />
           ))}
-          {!this.state.open && this.all().length > closedItemsCount && <Button onClick={() => this.open()} narrow tiny>More</Button>}
+          {!this.state.open && this.all().length > closedItemsCount && <Button onClick={() => this.open()} narrow tiny style={styles.button}>More</Button>}
         </Container>
       </Container>
     )
@@ -88,9 +78,8 @@ const styles = {
     width: '100%',
     maxWidth: '550px',
   },
-  url: {
-    color: '#fff',
-    textDecoration: 'none',
-    borderBottom: '1px solid hsla(0, 0%, 100%, 0.4)',
+  button: {
+    width: 'initial',
+    minWidth: 'initial',
   },
 }
