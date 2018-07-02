@@ -9,20 +9,19 @@ import Column from './Column'
 const projects = [
   {
     name: 'Opacity0',
-    period: '',
     description: 'Company roadmaps to share with the public',
     category: 'Pre-launch',
   },
   {
     name: 'Abstract',
-    period: '',
     description: 'Open-source platform to build AI systems intuitively',
     category: 'Pre-launch',
   },
   {
     name: 'Bloometry',
     description: 'Email verification service',
-    category: 'Growing',
+    period: '2018 Feb - 2018 Jun',
+    category: 'Past',
     url: 'https://bloometry.com',
   },
   {
