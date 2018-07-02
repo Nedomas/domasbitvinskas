@@ -96,7 +96,7 @@ const projects = [
   {
     name: 'Pamokyk',
     period: '2014 Jul',
-    description: 'Skill exchange public board',
+    description: 'Social skill exchange public board',
     category: 'Past',
   },
   {
