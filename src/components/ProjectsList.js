@@ -8,9 +8,10 @@ import Column from './Column'
 
 const projects = [
   {
-    name: 'Opacity0',
-    description: 'Company roadmaps to share with the public',
+    name: 'Honestive',
+    description: 'Embeddable public product roadmap',
     category: 'Pre-launch',
+    url: 'https://honestive.com',
   },
   {
     name: 'Abstract',

@@ -25,7 +25,7 @@ export default () => (
       <Button marginRight level={2} component='a' href='https://media.graphcms.com/ZOAXCxzMSEiKzCudF4Wk' target='_blank' bold>
         Professional CV
       </Button>
-      <Text paddingTop padBottom narrow>
+      <Text paddingTop paddingBottom narrow>
         If you'd like to have me in your team as a <Text bold inline>CTO</Text> or <Text bold inline>VP of Engineering</Text>
       </Text>
     </Container>
