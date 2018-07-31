@@ -140,7 +140,7 @@ const projects = [
 ]
 
 export default () => (
-  <Container flex wrap padTop={8} padBottom={4}>
+  <Container flex wrap paddingTop={8} paddingBottom={4}>
     {_.map(['Growing', 'Pre-launch', 'Past', 'Open Source'], (category) => (
       <Column key={category} category={category} projects={projects} />
     ))}

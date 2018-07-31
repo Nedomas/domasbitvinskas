@@ -6,7 +6,7 @@ import {
 } from 'candour'
 
 export default ({ headline, subheadline, description, url }) => (
-  <Container padBottom>
+  <Container paddingBottom>
     <Container>
       {url && <a href={url} target='_blank' style={styles.url}>
         <Headline inline level={3}>
@@ -17,7 +17,7 @@ export default ({ headline, subheadline, description, url }) => (
         {headline}
       </Headline>}
 
-      <Text inline padLeft={0.3}>{subheadline}</Text>
+      <Text inline paddingLeft={0.3}>{subheadline}</Text>
     </Container>
     <Text level={3}>
       {description}

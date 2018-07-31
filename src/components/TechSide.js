@@ -9,11 +9,11 @@ import {
 import TechnologiesList from './TechnologiesList'
 
 export default () => (
-  <Container padTop={2} padBottom={4} limited>
+  <Container paddingTop={2} paddingBottom={4} limited>
     <Headline level={2} bold>
       Tech Side
     </Headline>
-    <Text level={3} limited padBottom>
+    <Text level={3} limited paddingBottom>
       10+ years developing websites and apps with the most promising tech.
       Here are my <Text level={3} bold inline>4 bets</Text> on
       technologies that I will continue to work with in the future.
@@ -21,11 +21,11 @@ export default () => (
 
     <TechnologiesList />
 
-    <Container flex padTop={2} alignItemsCenter wrap>
+    <Container flex paddingTop={2} alignItemsCenter wrap>
       <Button marginRight level={2} component='a' href='https://media.graphcms.com/ZOAXCxzMSEiKzCudF4Wk' target='_blank' bold>
         Professional CV
       </Button>
-      <Text padTop padBottom narrow>
+      <Text paddingTop padBottom narrow>
         If you'd like to have me in your team as a <Text bold inline>CTO</Text> or <Text bold inline>VP of Engineering</Text>
       </Text>
     </Container>

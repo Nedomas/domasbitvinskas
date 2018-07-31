@@ -7,11 +7,11 @@ import {
 } from 'candour'
 
 export default () => (
-  <Container padTop={4} limited padBottom={6}>
+  <Container paddingTop={4} limited paddingBottom={6}>
     <Headline level={2} bold>
       How to reach me
     </Headline>
-    <Text level={3} padBottom>
+    <Text level={3} paddingBottom>
       Love to connect with people who have a growth mindset.
       <br/>
       I advise early-stage startups on growth, tech and business.

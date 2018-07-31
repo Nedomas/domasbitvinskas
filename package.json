@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "@candour/fluid": "^1.0.9",
-    "candour": "^1.0.1",
+    "candour": "3.1.1",
     "lodash": "^4.17.10",
     "normalize.css": "^8.0.0",
     "react": "^16.4.1",

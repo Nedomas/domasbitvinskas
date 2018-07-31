@@ -10,7 +10,7 @@ export default () => (
     <Headline level={4} uppercase bold>
       Domas Bitvinskas
     </Headline>
-    <Container padTop={4} narrow>
+    <Container paddingTop={4} narrow>
       <Headline bold limited>
         Maker <br/>& Startup Fanatic
       </Headline>

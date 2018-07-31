@@ -48,12 +48,12 @@ export default class Column extends Component {
     } = this.props
 
     return (
-      <Container style={styles.container} padBottom={2}>
+      <Container style={styles.container} paddingBottom={2}>
         <Container>
-          <Headline level={2} padBottom={0.5} bold inline>
+          <Headline level={2} paddingBottom={0.5} bold inline>
             {category}
           </Headline>
-          <Text inline padLeft={0.3}>{_.filter(projects, { category }).length}</Text>
+          <Text inline paddingLeft={0.3}>{_.filter(projects, { category }).length}</Text>
         </Container>
         <Container>
           {_.map(this.items(), ({ name, period, description, url }, n) => (

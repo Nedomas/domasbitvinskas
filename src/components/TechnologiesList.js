@@ -30,7 +30,7 @@ const technologies = [
 ]
 
 export default () => (
-  <Container padTop>
+  <Container paddingTop>
     {_.map(technologies, ({ name, experience, description }) => (
       <Item
         key={name}
