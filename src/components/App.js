@@ -20,7 +20,7 @@ class App extends Component {
         <Meta />
         <VideoBackground />
 
-        <Container padding={isSmall(this) ? 2 : 4} paddingTop={2}>
+        <Container padding={isSmall(this) ? 1 : 4} paddingTop={2}>
           <Splash />
           <ProjectsList />
           <Publications />

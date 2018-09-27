@@ -11,14 +11,14 @@ export default () => (
       My Publications
     </Heading>
 
-    <Container paddingTop={10} paddingBottom style={styles.blogPost} component='a' href='https://www.intermix.io/blog/machine-learning-in-the-browser/' target='_blank'>
+    <Container paddingTop={6} paddingBottom style={styles.blogPost} component='a' href='https://www.intermix.io/blog/machine-learning-in-the-browser/' target='_blank'>
       <Heading level={3} fontWeight600>
         The Future of Machine Learning in the Browser with TensorFlow.js
       </Heading>
       <Text paddingBottom>
         July 24th, 2018 | intermix.io
       </Text>
-      <Text level={3} limited paddingBottom>
+      <Text level={2} limited paddingBottom>
         Up until now, I did most of my machine learning work in Python.
         With the recent release of TensorFlow.js – TensorFlow for JavaScript,
         I decided to spend the last couple of months trying out machine learning in the browser.

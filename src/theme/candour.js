@@ -1,27 +1,21 @@
 import fluid from '@candour/fluid'
+import step from '@candour/step'
 import colors from './colors'
 
 export default {
   heading: {
     1: {
-      fontSize: fluid(40, 60),
-      lineHeight: fluid(45, 65),
       fontWeight: 600,
     },
     2: {
-      fontSize: fluid(45, 80),
-      lineHeight: fluid(45, 80),
+      fontSize: step(4.5),
       letterSpacing: '-.015em',
       fontWeight: 600,
     },
     3: {
-      fontSize: fluid(20, 24),
-      lineHeight: fluid(24, 28),
     },
     4: {
       letterSpacing: '.06em',
-      fontSize: fluid(14, 16),
-      lineHeight: fluid(14, 16),
     },
   },
   text: {
@@ -32,8 +26,6 @@ export default {
       color: colors.grey,
     },
     3: {
-      fontSize: fluid(20, 24),
-      lineHeight: fluid(23, 36),
       color: colors.grey,
     },
   },

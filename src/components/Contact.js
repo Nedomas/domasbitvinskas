@@ -11,7 +11,7 @@ export default () => (
     <Heading level={2}>
       How to reach me
     </Heading>
-    <Text level={3} paddingBottom>
+    <Text level={2} paddingBottom>
       Love to connect with people who have a growth mindset.
       <br/>
       I advise early-stage startups on growth, tech and business.

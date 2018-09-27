@@ -19,7 +19,7 @@ export default ({ heading, subheading, description, url }) => (
 
       <Text displayInline paddingLeft={0.3}>{subheading}</Text>
     </Container>
-    <Text level={3}>
+    <Text level={2}>
       {description}
     </Text>
   </Container>

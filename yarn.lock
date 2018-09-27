@@ -11,9 +11,9 @@
     babel-preset-minify "^0.3.0"
     number-parsing "^0.3.0"
 
-"@candour/step@^1.0.11":
-  version "1.0.11"
-  resolved "https://registry.yarnpkg.com/@candour/step/-/step-1.0.11.tgz#50cc4fe21da17fa26a2369932c16f1c2bf7288d4"
+"@candour/step@2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@candour/step/-/step-2.0.0.tgz#fc21c9afb6acd3519ab7af12312f241418895c90"
   dependencies:
     "@candour/fluid" "^1.0.9"
     babel-cli "^6.26.0"
@@ -1562,12 +1562,12 @@ camelcase@^4.0.0, camelcase@^4.1.0:
   version "4.1.0"
   resolved "https://registry.yarnpkg.com/camelcase/-/camelcase-4.1.0.tgz#d545635be1e33c542649c69173e5de6acfae34dd"
 
-candour@4.1.0:
-  version "4.1.0"
-  resolved "https://registry.yarnpkg.com/candour/-/candour-4.1.0.tgz#12b35d92452e4cc7b88ecdaf9c21c965ff72cb10"
+candour@4.1.1:
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/candour/-/candour-4.1.1.tgz#0a65a22db63576ccf40e57399637547203c02570"
   dependencies:
     "@candour/fluid" "^1.0.9"
-    "@candour/step" "^1.0.11"
+    "@candour/step" "2.0.0"
     filter-invalid-dom-props "^2.0.0"
     known-css-properties "^0.6.1"
     lodash "^4.17.10"
