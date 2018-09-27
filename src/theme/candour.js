@@ -8,9 +8,10 @@ export default {
       fontWeight: 600,
     },
     2: {
-      fontSize: step(4.5),
+      fontSize: fluid(45, 80),
       letterSpacing: '-.015em',
       fontWeight: 600,
+      wordBreak: 'break-word',
     },
     3: {
     },

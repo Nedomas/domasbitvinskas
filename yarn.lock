@@ -11,7 +11,7 @@
     babel-preset-minify "^0.3.0"
     number-parsing "^0.3.0"
 
-"@candour/step@2.0.0":
+"@candour/step@2.0.0", "@candour/step@^2.0.0":
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/@candour/step/-/step-2.0.0.tgz#fc21c9afb6acd3519ab7af12312f241418895c90"
   dependencies:
