@@ -24,7 +24,7 @@ const technologies = [
   },
   {
     name: 'Tensorflow.js',
-    experience: 'Just a few months',
+    experience: 'Half of a year',
     description: 'Powerful machine learning just came to the browser with Tensorflow.js and will enable more developers to collaborate and build more complex models.',
   },
 ]
@@ -34,8 +34,8 @@ export default () => (
     {_.map(technologies, ({ name, experience, description }) => (
       <Item
         key={name}
-        headline={name}
-        subheadline={experience}
+        heading={name}
+        subheading={experience}
         description={description}
       />
     ))}

@@ -10,7 +10,7 @@ import VideoBackground from './VideoBackground'
 import Splash from './Splash'
 import ProjectsList from './ProjectsList'
 import TechSide from './TechSide'
-import Articles from './Articles'
+import Publications from './Publications'
 import Contact from './Contact'
 
 class App extends Component {
@@ -23,7 +23,7 @@ class App extends Component {
         <Container padding={isSmall(this) ? 2 : 4} paddingTop={2}>
           <Splash />
           <ProjectsList />
-          <Articles />
+          <Publications />
           <TechSide />
           <Contact />
         </Container>

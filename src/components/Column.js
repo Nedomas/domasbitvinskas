@@ -3,9 +3,10 @@ import _ from 'lodash'
 import {
   Button,
   Container,
-  Headline,
+  Heading,
   Text,
 } from 'candour'
+import fluid from '@candour/fluid'
 
 import Item from './Item'
 
@@ -47,25 +48,27 @@ export default class Column extends Component {
       projects,
     } = this.props
 
+    if (!this.items().length) return null
+
     return (
       <Container style={styles.container} paddingBottom={2}>
         <Container>
-          <Headline level={2} paddingBottom={0.5} bold inline>
+          <Heading level={2} paddingBottom={0.5} displayInline>
             {category}
-          </Headline>
-          <Text inline paddingLeft={0.3}>{_.filter(projects, { category }).length}</Text>
+          </Heading>
+          <Text displayInline paddingLeft={0.3}>{_.filter(projects, { category }).length}</Text>
         </Container>
         <Container>
           {_.map(this.items(), ({ name, period, description, url }, n) => (
             <Item
               key={name}
-              headline={name}
-              subheadline={period}
+              heading={name}
+              subheading={period}
               description={description}
               url={url}
             />
           ))}
-          {!this.state.open && this.all().length > closedItemsCount && <Button onClick={() => this.open()} narrow tiny style={styles.button}>More</Button>}
+          {!this.state.open && this.all().length > closedItemsCount && <Button onClick={() => this.open()} style={styles.button}>More</Button>}
         </Container>
       </Container>
     )
@@ -80,6 +83,9 @@ const styles = {
   },
   button: {
     width: 'initial',
+    height: 'initial',
     minWidth: 'initial',
+    paddingTop: fluid(5, 10),
+    paddingBottom: fluid(5, 10),
   },
 }

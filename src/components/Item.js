@@ -1,23 +1,23 @@
 import React from 'react'
 import {
-  Headline,
+  Heading,
   Container,
   Text,
 } from 'candour'
 
-export default ({ headline, subheadline, description, url }) => (
+export default ({ heading, subheading, description, url }) => (
   <Container paddingBottom>
     <Container>
       {url && <a href={url} target='_blank' style={styles.url}>
-        <Headline inline level={3}>
-          {headline}
-        </Headline>
+        <Heading displayInline level={3}>
+          {heading}
+        </Heading>
       </a>}
-      {!url && <Headline inline level={3}>
-        {headline}
-      </Headline>}
+      {!url && <Heading displayInline level={3}>
+        {heading}
+      </Heading>}
 
-      <Text inline paddingLeft={0.3}>{subheadline}</Text>
+      <Text displayInline paddingLeft={0.3}>{subheading}</Text>
     </Container>
     <Text level={3}>
       {description}

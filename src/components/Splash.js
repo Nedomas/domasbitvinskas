@@ -1,19 +1,19 @@
 import React from 'react'
 import {
-  Headline,
+  Heading,
   Container,
   Text,
 } from 'candour'
 
 export default () => (
   <Container>
-    <Headline level={4} uppercase bold>
+    <Heading level={4} textTransformUppercase fontWeight600>
       Domas Bitvinskas
-    </Headline>
+    </Heading>
     <Container paddingTop={4} narrow>
-      <Headline bold limited>
+      <Heading limited>
         Maker <br/>& Startup Fanatic
-      </Headline>
+      </Heading>
       <Text level={2}>
         Just keep running better & better startups while others scream about how they are the best.
       </Text>

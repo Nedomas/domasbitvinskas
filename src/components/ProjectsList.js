@@ -14,6 +14,12 @@ const projects = [
     url: 'https://honestive.com',
   },
   {
+    name: 'Kurkim',
+    description: 'Local creatives network',
+    category: 'Pre-launch',
+    url: 'https://kurkim.lt',
+  },
+  {
     name: 'Abstract',
     description: 'Open-source platform to build AI systems intuitively',
     category: 'Pre-launch',
@@ -24,12 +30,6 @@ const projects = [
     period: '2018 Feb - 2018 Jun',
     category: 'Past',
     url: 'https://bloometry.com',
-  },
-  {
-    name: 'Kurkim',
-    description: 'Local creatives network',
-    category: 'Growing',
-    url: 'https://kurkim.lt',
   },
   {
     name: 'Blond',
@@ -141,8 +141,8 @@ const projects = [
 ]
 
 export default () => (
-  <Container flex wrap paddingTop={8} paddingBottom={4}>
-    {_.map(['Growing', 'Pre-launch', 'Past', 'Open Source'], (category) => (
+  <Container displayFlex flexWrapWrap paddingTop={8} paddingBottom={4}>
+    {_.map(['Growing', 'Pre-launch', 'Open Source', 'Past'], (category) => (
       <Column key={category} category={category} projects={projects} />
     ))}
   </Container>

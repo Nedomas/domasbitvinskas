@@ -1,20 +1,20 @@
 import React from 'react'
 import {
-  Headline,
+  Heading,
   Container,
   Text,
 } from 'candour'
 
 export default () => (
   <Container paddingTop={2} paddingBottom={4} limited>
-    <Headline level={2} bold>
-      My Articles
-    </Headline>
+    <Heading level={2}>
+      My Publications
+    </Heading>
 
     <Container paddingTop={10} paddingBottom style={styles.blogPost} component='a' href='https://www.intermix.io/blog/machine-learning-in-the-browser/' target='_blank'>
-      <Headline level={3} bold>
+      <Heading level={3} fontWeight600>
         The Future of Machine Learning in the Browser with TensorFlow.js
-      </Headline>
+      </Heading>
       <Text paddingBottom>
         July 24th, 2018 | intermix.io
       </Text>
