@@ -75,7 +75,7 @@ class Talks extends Component {
                 {date}
               </Text>
               <Heading level={4} paddingBottom textAlignCenter>
-                @ {location}
+                {location}
               </Heading>
             </Container>
           ))}
