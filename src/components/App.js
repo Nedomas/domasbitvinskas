@@ -11,6 +11,7 @@ import Splash from './Splash'
 import ProjectsList from './ProjectsList'
 import TechSide from './TechSide'
 import Publications from './Publications'
+import Talks from './Talks'
 import Contact from './Contact'
 
 class App extends Component {
@@ -24,6 +25,7 @@ class App extends Component {
           <Splash />
           <ProjectsList />
           <Publications />
+          <Talks />
           <TechSide />
           <Contact />
         </Container>

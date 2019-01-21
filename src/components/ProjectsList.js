@@ -9,7 +9,7 @@ import Column from './Column'
 const projects = [
   {
     name: 'Honestive',
-    description: 'Embeddable public product roadmap',
+    description: 'Transparency layer for modern startups',
     category: 'Pre-launch',
     url: 'https://honestive.com',
   },

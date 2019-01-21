@@ -1,5 +1,4 @@
 import fluid from '@candour/fluid'
-import step from '@candour/step'
 import colors from './colors'
 
 export default {
