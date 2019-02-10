@@ -116,6 +116,7 @@ const projects = [
     period: '2018 May - Now (Pre-release)',
     description: 'Fluid design framework',
     category: 'Open Source',
+    url: 'https://candour.pro',
   },
   {
     name: 'Zapata',
