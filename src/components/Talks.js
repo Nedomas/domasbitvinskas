@@ -40,7 +40,7 @@ const talks = [
     location: 'VilniusRB Meetup',
   },
   {
-    url: 'https://speakerdeck.com/nedomas/rockstars-and-productivity',
+    url: 'https://www.youtube.com/watch?v=of_kZD6TstU',
     image: '/talks/rockstars-and-productivity.jpg',
     date: 'Apr 5th, 2014',
     location: 'Ruby Conference Vilnius',
@@ -67,9 +67,24 @@ class Talks extends Component {
           Talks
         </Heading>
 
-        <Container displayFlex overflowAuto marginRight={isSmall(this) ? -1 : -4}>
-          {_.map(talks, ({ url, image, date, location }) => (
-            <Container key={url} width={12} paddingBottom paddingRight component='a' href={url} target='_blank' style={{ flexShrink: 0 }}>
+        <Container
+          displayFlex
+          overflowAuto
+          marginRight={isSmall(this) ? -1 : -4}
+          marginLeft={isSmall(this) ? -1 : -4}
+        >
+          {_.map(talks, ({ url, image, date, location }, i) => (
+            <Container
+              key={url}
+              width={12}
+              paddingBottom
+              paddingRight
+              paddingLeft={i === 0 ? (isSmall(this) ? 1 : 4) : 0}
+              component='a'
+              href={url}
+              target='_blank'
+              style={{ flexShrink: 0 }}
+            >
               <Container component='img' src={image} width='100%' borderRadius={0.3} />
               <Text paddingTop={0.5} textAlignCenter>
                 {date}
