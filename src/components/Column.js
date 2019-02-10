@@ -52,8 +52,8 @@ export default class Column extends Component {
 
     return (
       <Container style={styles.container} paddingBottom={2}>
-        <Container>
-          <Heading level={2} paddingBottom={0.5} displayInline>
+        <Container paddingBottom>
+          <Heading level={2} displayInline>
             {category}
           </Heading>
           <Text displayInline paddingLeft={0.3}>{_.filter(projects, { category }).length}</Text>
