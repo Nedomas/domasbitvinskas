@@ -10,12 +10,12 @@ export default () => (
     <Heading level={4} textTransformUppercase fontWeight600>
       Domas Bitvinskas
     </Heading>
-    <Container paddingTop={4} narrow>
-      <Heading limited>
-        Maker <br/>& Startup Fanatic
+    <Container paddingTop={6} narrow>
+      <Heading limited paddingBottom>
+        Startup Fanatic
       </Heading>
       <Text level={2}>
-        Just keep running better & better startups while others scream about how they are the best.
+        Just keep working on better startups while others scream how they are the best.
       </Text>
     </Container>
   </Container>
