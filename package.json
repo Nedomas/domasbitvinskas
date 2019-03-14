@@ -7,6 +7,7 @@
     "@candour/step": "^2.0.0",
     "candour": "4.1.1",
     "lodash": "^4.17.10",
+    "moment": "^2.24.0",
     "normalize.css": "^8.0.0",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
