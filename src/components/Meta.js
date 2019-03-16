@@ -2,7 +2,7 @@ import React from 'react'
 import { Helmet } from 'react-helmet'
 import ogUrl from '../helpers/ogUrl'
 
-const title = 'Domas Bitvinskas - Startup Fanatic'
+const title = 'Domas Bitvinskas - Strategy & Growth'
 const description = 'Just keep running better & better startups while others scream about how they are the best.'
 
 export default () => (
