@@ -1,4 +1,5 @@
 import React from 'react'
+import moment from 'moment'
 import {
   Heading,
   Container,
@@ -14,7 +15,7 @@ export default () => (
       Tech Side
     </Heading>
     <Text level={2} limited paddingBottom>
-      10+ years developing websites and apps with the most promising tech.
+      {moment('2005-06-01').fromNow(true)} of experience developing websites and apps with the most promising tech.
       Here are my <Text level={2} fontWeight600 displayInline>4 bets</Text> on
       technologies that I will continue to work with in the future.
     </Text>

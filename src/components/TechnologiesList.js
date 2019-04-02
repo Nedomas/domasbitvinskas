@@ -11,7 +11,7 @@ const technologies = [
   {
     name: 'React.js',
     since: '2013-10-01',
-    description: 'No-brainer for 2019. Vibrant community that has been setting the trends in Javascript world for the last 5 years.',
+    description: `No-brainer for 2019. Vibrant community that has been setting the trends in Javascript world for the last ${moment("2013-10-01").fromNow(true)}.`,
   },
   {
     name: 'GraphQL + Apollo',
