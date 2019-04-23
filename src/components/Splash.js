@@ -12,7 +12,7 @@ export default () => (
     </Heading>
     <Container paddingTop={6} narrow>
       <Heading limited paddingBottom>
-        Strategy & Growth
+        Strategy and Growth
       </Heading>
       <Text level={2}>
         Just keep working on better startups while others scream how they are the best.

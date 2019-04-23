@@ -23,11 +23,11 @@ export default () => (
     <TechnologiesList />
 
     <Container displayFlex flexWrapWrap paddingTop={2} alignItemsCenter>
-      <Button marginRight level={2} component='a' href='https://media.graphcms.com/pMU8pIU5RbiF6ozBGWif' target='_blank'>
+      <Button marginRight level={2} component='a' href='/DomasBitvinskas.pdf' target='_blank'>
         Professional CV
       </Button>
       <Text paddingTop paddingBottom narrow>
-        If you'd like to have me in your team as a <Text fontWeight600 displayInline>Product Owner</Text> or <Text fontWeight600 displayInline>CTO</Text>
+        If you'd like to have me in your team as a <Text fontWeight600 displayInline>CTO</Text> or <Text fontWeight600 displayInline>Product Owner</Text>
       </Text>
     </Container>
   </Container>
