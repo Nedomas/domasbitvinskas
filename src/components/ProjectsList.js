@@ -8,21 +8,28 @@ import Column from './Column'
 
 const projects = [
   {
+    name: 'GraphQL.jobs',
+    description: 'Jobs board for modern GraphQL-related jobs',
+    category: 'Growing',
+    url: 'https://graphql.jobs',
+  },
+  {
     name: 'Honestive',
     description: 'Transparency layer for modern startups',
     category: 'Pre-launch',
     url: 'https://honestive.com',
   },
   {
-    name: 'Kurkim',
-    description: 'Local creatives network',
-    category: 'Pre-launch',
-    url: 'https://kurkim.lt',
-  },
-  {
     name: 'Abstract',
     description: 'Open-source platform to build AI systems intuitively',
     category: 'Pre-launch',
+  },
+  {
+    name: 'Kurkim',
+    description: 'Local creatives network',
+    period: '2018 Jun - 2018 Oct',
+    category: 'Past',
+    url: 'https://kurkim.lt',
   },
   {
     name: 'Bloometry',
