@@ -29,7 +29,7 @@ const projects = [
     description: 'Local creatives network',
     period: '2018 Jun - 2018 Oct',
     category: 'Past',
-    url: 'https://kurkim.lt',
+    url: 'https://kurkim.netlify.com',
   },
   {
     name: 'Bloometry',
