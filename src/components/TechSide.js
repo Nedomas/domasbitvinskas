@@ -23,7 +23,7 @@ export default () => (
     <TechnologiesList />
 
     <Container displayFlex flexWrapWrap paddingTop={2} alignItemsCenter>
-      <Button marginRight level={2} component='a' href='/DomasBitvinskas.pdf' target='_blank'>
+      <Button marginRight level={2} component='a' href='https://github.com/Nedomas/domasbitvinskas/raw/master/public/DomasBitvinskas.pdf' target='_blank'>
         Professional CV
       </Button>
       <Text paddingTop paddingBottom narrow>

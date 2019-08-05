@@ -8,7 +8,7 @@ import {
 export default ({ heading, subheading, description, url }) => (
   <Container paddingBottom>
     <Container>
-      {url && <a href={url} target='_blank' style={styles.url}>
+      {url && <a href={url} target='_blank' style={styles.url} rel='noopener noreferrer'>
         <Heading displayInline level={3}>
           {heading}
         </Heading>

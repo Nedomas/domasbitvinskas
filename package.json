@@ -6,19 +6,31 @@
     "@candour/fluid": "^1.0.9",
     "@candour/step": "^2.0.0",
     "candour": "4.1.1",
-    "lodash": "^4.17.10",
+    "lodash": "^4.17.15",
     "moment": "^2.24.0",
-    "normalize.css": "^8.0.0",
-    "react": "^16.4.1",
-    "react-dom": "^16.4.1",
-    "react-helmet": "^5.2.0",
-    "react-scripts": "1.1.4",
-    "react-window-size": "^1.2.0"
+    "normalize.css": "^8.0.1",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-helmet": "^5.2.1",
+    "react-scripts": "3.0.1",
+    "react-window-size": "^1.2.2"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
