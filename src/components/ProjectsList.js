@@ -8,6 +8,12 @@ import Column from './Column'
 
 const projects = [
   {
+    name: 'Vieta',
+    description: 'Chat for projects',
+    category: 'Growing',
+    url: 'https://vieta.app',
+  },
+  {
     name: 'GraphQL.jobs',
     description: 'Jobs board for modern GraphQL-related jobs',
     category: 'Growing',
@@ -119,11 +125,11 @@ const projects = [
     category: 'Past',
   },
   {
-    name: 'Candour',
+    name: 'Amendable',
     period: '2018 May - Now (Pre-release)',
-    description: 'Fluid design framework',
+    description: 'React Abstraction Layer for better design systems',
     category: 'Open Source',
-    url: 'https://candour.pro',
+    url: 'https://amendable.dev',
   },
   {
     name: 'Zapata',
