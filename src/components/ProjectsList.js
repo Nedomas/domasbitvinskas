@@ -6,13 +6,14 @@ import {
 
 import Column from './Column'
 
+//  {
+//    name: 'Vieta',
+//    description: 'Chat for projects',
+//    category: 'Growing',
+//    url: 'https://vieta.app',
+//  },
+
 const projects = [
-  {
-    name: 'Vieta',
-    description: 'Chat for projects',
-    category: 'Growing',
-    url: 'https://vieta.app',
-  },
   {
     name: 'GraphQL.jobs',
     description: 'Jobs board for modern GraphQL-related jobs',
