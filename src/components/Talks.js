@@ -10,6 +10,12 @@ import windowSize from 'react-window-size'
 
 const talks = [
   {
+    url: 'https://speakerdeck.com/nedomas/apollo-and-graphql-what-we-learned-building-a-multi-platform-chat-app',
+    image: '/talks/apollo-and-graphql-what-we-learned.png',
+    date: 'Dec 12th, 2019',
+    location: 'Vilnius.js',
+  },
+  {
     url: 'https://www.youtube.com/watch?v=rqhMx7heBm4',
     image: '/talks/best-kept-secrets.png',
     date: 'Dec 13th, 2018',
