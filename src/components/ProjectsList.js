@@ -9,7 +9,6 @@ import Column from './Column'
 const projects = [
   {
     name: 'Closeheat',
-    period: '2020 Jun - Now',
     description: 'Focus on Machine Learning',
     category: 'Growing',
     url: 'https://closeheat.com',
