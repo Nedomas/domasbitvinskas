@@ -6,14 +6,20 @@ import {
 
 import Column from './Column'
 
-//  {
-//    name: 'Vieta',
-//    description: 'Chat for projects',
-//    category: 'Growing',
-//    url: 'https://vieta.app',
-//  },
-
 const projects = [
+  {
+    name: 'Closeheat',
+    period: '2020 Jun - Now',
+    description: 'Focus on Machine Learning',
+    category: 'Growing',
+    url: 'https://closeheat.com',
+  },
+ {
+   name: 'Vieta',
+   description: 'Chat for projects',
+   category: 'Growing',
+   url: 'https://vieta.app',
+ },
   {
     name: 'GraphQL.jobs',
     description: 'Jobs board for modern GraphQL-related jobs',
@@ -53,7 +59,7 @@ const projects = [
     url: 'http://www.joinblond.com',
   },
   {
-    name: 'Closeheat',
+    name: 'Closeheat Editor',
     period: '2014 Dec - 2017 Jan',
     description: 'Visual editing layer for static websites',
     category: 'Past',
