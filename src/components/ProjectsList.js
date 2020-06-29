@@ -62,7 +62,7 @@ const projects = [
     period: '2014 Dec - 2017 Jan',
     description: 'Visual editing layer for static websites',
     category: 'Past',
-    url: 'http://closeheat.com',
+    url: 'https://editor.closeheat.com',
   },
   {
     name: 'Wild Rituals',
