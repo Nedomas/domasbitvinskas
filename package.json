@@ -6,7 +6,7 @@
     "@candour/fluid": "^1.0.9",
     "@candour/step": "^2.0.0",
     "candour": "4.1.1",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.19",
     "moment": "^2.24.0",
     "normalize.css": "^8.0.1",
     "react": "^16.8.6",
