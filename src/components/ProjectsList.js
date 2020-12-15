@@ -20,6 +20,12 @@ const projects = [
    url: 'https://vieta.app',
  },
   {
+    name: 'Atlasmic',
+    description: 'Sales Acceleration Platform',
+    category: 'Growing',
+    url: 'https://atlasmic.com',
+  },
+  {
     name: 'GraphQL.jobs',
     description: 'Jobs board for modern GraphQL-related jobs',
     category: 'Growing',
