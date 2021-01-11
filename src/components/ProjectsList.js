@@ -32,6 +32,12 @@ const projects = [
     url: 'https://graphql.jobs',
   },
   {
+    name: 'Blond',
+    period: '2017 Sep - Now',
+    description: 'ML-based developer sourcing and BI consultancy',
+    url: 'http://www.joinblond.com',
+  },
+  {
     name: 'Honestive',
     description: 'Transparency layer for modern startups',
     category: 'Pre-launch',
@@ -55,13 +61,6 @@ const projects = [
     period: '2018 Feb - 2018 Jun',
     category: 'Past',
     url: 'https://bloometry.com',
-  },
-  {
-    name: 'Blond',
-    period: '2017 Sep - 2018 Feb',
-    description: 'ML-based developer sourcing and BI consultancy',
-    category: 'Past',
-    url: 'http://www.joinblond.com',
   },
   {
     name: 'Closeheat Editor',
