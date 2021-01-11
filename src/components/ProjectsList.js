@@ -33,6 +33,7 @@ const projects = [
   },
   {
     name: 'Blond',
+    category: 'Growing',
     period: '2017 Sep - Now',
     description: 'ML-based developer sourcing and BI consultancy',
     url: 'http://www.joinblond.com',
