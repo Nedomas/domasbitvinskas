@@ -7,12 +7,6 @@ import {
 import Column from './Column'
 
 const projects = [
-  {
-    name: 'Closeheat',
-    description: 'Focus on Machine Learning',
-    category: 'Growing',
-    url: 'https://closeheat.com',
-  },
  {
    name: 'Vieta',
    description: 'Chat for projects',
@@ -26,17 +20,23 @@ const projects = [
     url: 'https://atlasmic.com',
   },
   {
+    name: 'Blond',
+    category: 'Growing',
+    period: '2017 Sep - Now',
+    description: 'ML-based developer sourcing and BI consultancy',
+    url: 'http://www.joinblond.com',
+  },
+  {
     name: 'GraphQL.jobs',
     description: 'Jobs board for modern GraphQL-related jobs',
     category: 'Growing',
     url: 'https://graphql.jobs',
   },
   {
-    name: 'Blond',
-    category: 'Growing',
-    period: '2017 Sep - Now',
-    description: 'ML-based developer sourcing and BI consultancy',
-    url: 'http://www.joinblond.com',
+    name: 'Closeheat',
+    description: 'Focus on Machine Learning',
+    category: 'Pre-launch',
+    url: 'https://closeheat.com',
   },
   {
     name: 'Honestive',
